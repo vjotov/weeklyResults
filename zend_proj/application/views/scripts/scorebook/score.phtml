@@ -1,0 +1,19 @@
+<div class="inner_element">
+<?php
+$this->form->setAction("/scorebook/score");
+echo $this->form;
+?>
+</div>
+<div >
+<p><?php echo $this->entries[0]->child_name;?>'s Scorebook for last 7 days: </p>
+<table>
+	<tr><th>Discipline</th><th>Score</th><th>Date</th></tr>
+    <?php foreach($this->entries as $entry) : ?>
+    <tr class="<?php echo $this->escape($entry->color)?>">
+    <td><?php echo $this->escape($entry->discipline_name) ?></td>
+	<td><?php echo $this->escape($entry->score) ?></td>
+	<td><?php echo $this->escape($entry->date) ?></td>
+	</tr>
+    <?php endforeach ?>
+</table>
+</div>
