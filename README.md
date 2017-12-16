@@ -10,3 +10,5 @@ Features:
 - selection of the child
 - overview of the child for the previous week (last 7 days)
 Note: If the data result is empty - please update the dates in table scores, or isert new data in it.
+
+in задание для PHP.doc is description of the task in russian.
